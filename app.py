@@ -9,11 +9,12 @@ def predict(data):
 
 # Function to map classes to images
 def class_to_image(class_name):
-    if class_name == "setosa":
+    class_name1=class_name.lower()
+    if class_name1 == "setosa":
         return "images/setosa.jpg"  # Replace with the actual path to your setosa image
-    elif class_name == "versicolor":
+    elif class_name1 == "versicolor":
         return "images/versicolor.jpg"  # Replace with the actual path to your versicolor image
-    elif class_name == "virginica":
+    elif class_name1 == "virginica":
         return "images/virginica.jpg"
       # Replace with the actual path to your virginica image
     else:
