@@ -47,6 +47,7 @@ if st.button("Predict type of Iris"):
 
     image_path = class_to_image(predicted_class)
     st.write(image_path)
+    st.write(f"the path is: '{image_path} ")
     st.image(image_path, use_container_width=True)
 
 
