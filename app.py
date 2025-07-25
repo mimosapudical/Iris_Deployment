@@ -14,8 +14,10 @@ def class_to_image(class_name):
     elif class_name == "versicolor":
         return "images/versicolor.jpg"  # Replace with the actual path to your versicolor image
     elif class_name == "virginica":
-        return "images/virginica.jpg"  # Replace with the actual path to your virginica image
-
+        return "images/virginica.jpg"
+      # Replace with the actual path to your virginica image
+    else:
+        return 'images/Error.png'
 st.title('Classifying Iris Flowers')
 st.markdown('Model to classify iris flowers into \
      (setosa, versicolor, virginica) based on their sepal/petal \
